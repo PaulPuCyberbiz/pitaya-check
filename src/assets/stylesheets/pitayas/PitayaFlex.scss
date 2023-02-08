@@ -1,0 +1,54 @@
+.pitaya-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  &.flex-col {
+    flex-direction: column;
+  }
+  &.flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+  &.flex-col, &.flex-col-reverse {
+    >*:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &.flex-row {
+    flex-direction: row;
+  }
+  &.flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+  &.flex-row, &.flex-row-reverse {
+    >*:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+  &.justify-start {
+    justify-content: flex-start;
+  }
+  &.justify-end {
+    justify-content: flex-end;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+  &.justify-space-between {
+    justify-content: space-between;
+  }
+  &.align-items-start {
+    align-items: flex-start;
+  }
+  &.align-items-end {
+    align-items: flex-end;
+  }
+  &.align-items-center {
+    align-items: center;
+  }
+  &.align-items-baseline {
+    align-items: baseline;
+  }
+  &.align-items-stretch {
+    align-items: stretch;
+  }
+}

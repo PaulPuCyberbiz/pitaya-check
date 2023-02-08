@@ -1,0 +1,26 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+:local(.pitayaSlider) {
+  padding-bottom: 28px;
+
+  ul.slick-dots > li {
+    transform: scale(1);
+    margin-left: 4px;
+    margin-right: 4px;
+
+    & > button:before {
+      color: rgb(216, 216, 216);
+      opacity: 1;
+    }
+
+    &:not(.slick-active) > button:hover:before {
+      color: rgb(155, 155, 155);
+      opacity: 0.75;
+    }
+
+    &.slick-active > button:before {
+      color: rgb(155, 155, 155);
+    }
+  }
+}

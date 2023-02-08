@@ -1,0 +1,75 @@
+.pitayaTextarea {
+  margin-bottom: 20px !important; // to override the style in main.css.scss
+  position: relative;
+  .textarea-title {
+    margin-bottom: 10px !important; // to override the style in main.css.scss
+  }
+  textarea{
+    color: #2b303a;
+    border: 1px solid #d6dff2;
+    font-size: 14px;
+    height: 100px;
+    padding: 10px 20px;
+    border-radius: 5px !important;
+    margin-bottom: 0;
+    resize: vertical;
+    min-height: 50px;
+    width: 100%;
+    &.fix-height {
+      resize: none;
+    }
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #8e99ad;
+      opacity: 1; /* Firefox */
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #8e99ad;
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: #8e99ad;
+    }
+    &:hover, &:focus {
+      border: 1px solid #5b7ce3;
+    }
+    &:disabled {
+      background-color: #ededee;
+      border: solid 1px #dedee0;
+    }
+    &.error {
+      border: 1px solid #ff6071;
+    }
+    &.fix-padding {
+      padding-right: 85px;
+    }
+  }
+  .language_label {
+    background-color: #22d0ae;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.23px;
+    padding: 1px 5px;
+    right: 17px;
+    top: 40px;
+    position: absolute;
+  }
+  .remarks_content {
+    display: flex;
+    .alert_content {
+      flex: 5 0 ;
+      margin-top: 10px !important;
+      color: #ff6071;
+      white-space: pre-wrap;
+    }
+    .notice_content {
+      flex: 1 0 0;
+      margin-top: 10px !important;
+      color: #8e99ad;
+      white-space: pre-wrap;
+      text-align: right;
+    }
+  }
+}

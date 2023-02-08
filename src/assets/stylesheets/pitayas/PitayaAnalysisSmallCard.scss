@@ -1,0 +1,62 @@
+.pitayaAnalysisSmallCard {
+  padding: 20px 16px;
+  border-radius: 5px;
+  border: solid 1px #d6dff2;
+  background-color: #f2f6fc;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &.medium {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    div {
+      text-align: center;
+    }
+    .title {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    .numberOfCard {
+      margin-bottom: 12px;
+    }
+  }
+  .title {
+    font-family: 'NotoSansCJKtc';
+    font-size: 15px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #3c5587;
+  }
+  .numberOfCard {
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #2b303a;
+  }
+  .compareText {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 400;
+    color: #8e99ad;
+  }
+}
+@media (min-width: 1920px) {
+  .pitayaAnalysisSmallCard {
+    .title {
+      font-size: 18px;
+    }
+    .numberOfCard {
+      margin-bottom: 105px;
+    }
+    &.medium {
+      .title {
+        margin-bottom: 24px;
+      }
+      .numberOfCard {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}

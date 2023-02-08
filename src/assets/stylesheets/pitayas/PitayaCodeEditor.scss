@@ -1,0 +1,10 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+.pitaya-code-editor {
+  .react-monaco-editor-container {
+    background-color: #fff;
+    border: solid 1px $havelock_blue;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}

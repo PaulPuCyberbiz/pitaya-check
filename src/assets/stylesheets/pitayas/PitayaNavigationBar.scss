@@ -1,0 +1,23 @@
+.pitayaNavigationBar {
+  background: #f2f6fc;
+  cursor: pointer;
+  .nav-option {
+    border: solid 1px #d6dff2;
+    flex: 1;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: -1px !important;
+    margin-bottom: -1px !important;
+    font-family: NotoSansCJKtc;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    color: #8e99ad;
+    min-width: 15%;
+    &.active {
+      background-color: #d6dff2;
+      color: #3c5587;
+    }
+  }
+}

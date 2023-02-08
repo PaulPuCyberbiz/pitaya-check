@@ -1,0 +1,24 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+.pitayaBreadcrumb {
+  color: $light_gray;
+  display: flex;
+  font-size: 10px;
+  list-style-type: none;
+  margin: 0;
+  li.breadcrumb_item.active span {
+    cursor: default;
+  }
+  li.breadcrumb_item:not(.active) {
+    a, span {
+      color: $rhino_black;
+    }
+    a:hover {
+      color: $primary_blue;
+      text-decoration: none;
+    }
+    svg {
+      width: 15px;
+    }
+  }
+}

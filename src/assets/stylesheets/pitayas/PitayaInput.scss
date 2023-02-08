@@ -1,0 +1,160 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+.pitayaInput {
+  margin-bottom: 20px;
+  > .input_label_row {
+    margin-bottom: 10px;
+
+    > *:not(:last-child) {
+      margin-right: 4px;
+    }
+
+    .input-title {
+      margin-bottom: 0 !important; // to override the style in main.css.scss
+    }
+
+    .input_required_text {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.23px;
+      color: #8e99ad;
+    }
+  }
+
+  .input_group {
+    align-items: stretch;
+    display: flex;
+    position: relative;
+
+    .input_group_prepend, .input_group_append {
+      border: 1px solid #d6dff2;
+      background-color: #f2f6fc;
+      color: #2b303a;
+      display: flex;
+      font-size: 14px;
+      height: 40px;
+      line-height: 20px;
+      padding: 10px 20px;
+      @include pitaya-grid()
+    }
+    .input_group_prepend {
+      border-radius: 5px 0 0 5px;
+      background-color: #f2f6fc;
+      margin-right: -1px;
+      & > button {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+    }
+    .input_group_append {
+      border-radius: 0 5px 5px 0;
+      margin-left: -1px;
+      & > button {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+    }
+    .input_block {
+      position: relative;
+      flex: 1 1 auto;
+      margin-bottom: 0;
+      width: 1%;
+      .input_content {
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 5px;
+        border: 1px solid #d6dff2;
+        color: #2b303a;
+        display: flex;
+        font-size: 14px;
+        margin-bottom: 0px;
+        overflow: hidden;
+        width: 100%;
+        &.disabled, &.readOnly {
+          background-color: #ededee;
+          border: solid 1px #dedee0;
+        }
+        &.disabled, &.readOnly {
+          background-color: #ededee;
+          border: solid 1px #dedee0;
+          &:hover, &:focus, &:focus-within {
+            border: 1px solid #dedee0;
+          }
+        }
+        &:hover, &:focus, &:focus-within {
+          border: 1px solid #5b7ce3;
+          outline: none;
+        }
+        input {
+          border: none;
+          flex-grow: 1;
+          height: 40px;
+          max-width: 100%;
+          margin-bottom: 0px;
+          color: #2b303a;
+          &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #8e99ad;
+            opacity: 1; /* Firefox */
+          }
+
+          &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #8e99ad;
+          }
+
+          &::-ms-input-placeholder { /* Microsoft Edge */
+            color: #8e99ad;
+          }
+          &:hover, &:focus {
+            border: none;
+            outline: none;
+          }
+          &:disabled {
+            background-color: #ededee;
+          }
+          @include pitaya-grid($off-height: 2px)
+        }
+      }
+      &:not(:first-child) .input_content {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      &:not(:last-child) .input_content {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .alert_content {
+        color: #ff6071;
+        font-size: 12px;
+      }
+      .notice_content {
+        color: #2b303a;
+        text-align: right;
+      }
+      .alert_content, .notice_content {
+        margin-top: 5px;
+        margin-bottom: 0px;
+        white-space: pre-wrap;
+      }
+      .trailing-component {
+        display: flex;
+        margin-right: 15px;
+        > *:not(:last-child) {
+          margin-right: 8px;
+        }
+        .close_btn {
+          color: #8e99ad;
+          cursor: pointer;
+          opacity: 0.5;
+          right: 20px;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  &.error .input_group .input_content {
+    border: 1px solid #ff6071 !important;
+  }
+}

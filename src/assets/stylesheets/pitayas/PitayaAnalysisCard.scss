@@ -1,0 +1,64 @@
+.pitayaAnalysisCard {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  border: solid 1px #d6dff2;
+  background-color: #fff;
+  > * {
+    width: calc(50% - 7.5px);
+  }
+  .total-summary {
+    align-content: center;
+    .title {
+      margin-bottom: 0px;
+      button {
+        margin-bottom: 3px;
+      }
+    }
+  }
+  .small-card-wrap {
+    .pitayaAnalysisSmallCard {
+      width: 100%;
+      .title {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .title {
+    margin-bottom: 0px;
+    .titleText {
+      margin: 0 4px 12px 12px;
+      font-family: NotoSansCJKtc;
+      font-size: 15px;
+      font-weight: 700;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: center;
+      color: #3c5587;
+    }
+  }
+  .numberOfCard {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2b303a;
+  }
+  .compareText {
+    font-size: 13px;
+    font-weight: 400;
+    color: #8e99ad;
+  }
+  .compareValue {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: #8e99ad;
+    &.increasing {
+      color: #22d0ae;
+    }
+    &.decreasing {
+      color: #ff6071;
+    }
+  }
+}

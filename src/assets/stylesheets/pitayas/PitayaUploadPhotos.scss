@@ -1,0 +1,116 @@
+.pitaya-upload-photos {
+  margin: 0px;
+  .sortable-container {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    .photo-display {
+      width: 120px;
+      height: 120px;
+      border-radius: 5px;
+      border: solid 1px #d6dff2;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-right: 16px;
+      margin-bottom: 10px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: #000;
+        img {
+          opacity: .6;
+        }
+        .icons .delete {
+          opacity: 1;
+        }
+        svg {
+          #g_linklist {
+            stroke: white;
+          }
+        }
+      }
+      img {
+        max-height: 100%;
+        width: auto;
+      }
+      .icons {
+        transition: all .3s;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        svg {
+          position: absolute;
+          left: 5px;
+          top: 5px;
+          cursor: all-scroll;
+        }
+        .delete {
+          position: absolute;
+          right: 5px;
+          top: 5px;
+          transition: all .3s;
+          color: #fff;
+          opacity: 0;
+          cursor: pointer;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .photo-upload-area {
+    color: #8e99ad;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    border: 1px dashed #d6dff2;
+    padding: 20px;
+    border-radius: 5px;
+    &:focus {
+      outline: none;
+    }
+    button {
+      margin-top: 15px;
+    }
+    .hint {
+      font-size: 13px;
+    }
+    .photoLabel {
+      display: none;
+    }
+    .title {
+      margin: 15px 0;
+    }
+  }
+}
+
+.product-upload-helper {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  img {
+    max-height: 100%;
+    width: auto;
+  }
+  .icons {
+    transition: all .3s;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    svg {
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      cursor: pointer;
+    }
+    .delete {
+      opacity: 0;
+    }
+  }
+}

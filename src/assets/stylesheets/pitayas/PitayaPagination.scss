@@ -1,0 +1,64 @@
+.pitayaPagination{
+  p {
+    margin-bottom: 0px;
+  }
+  .pageBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 !important;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    cursor: pointer;
+    &.normal{
+      color: gray;
+    }
+    &.current{
+      color: #5b7ce3;
+      background-color: #f2f6fc;
+      border-radius: 5px;
+    }
+  }
+  .changePageBtn{
+    position: relative;
+    width: 28px;
+    height: 28px;
+    margin: 0 5px !important;
+    border-radius: 5px;
+    border: solid 1px #dedee0;
+    background-color: #ffffff;
+    &.prev, &.next{
+      &:before{
+        display: block;
+        position: absolute;
+        top: 9px;
+        content: '';
+        width: 8px;
+        height: 8px;
+        border: 2px solid #8e99ad;
+        box-sizing: border-box;
+      }
+      &:hover{
+        background-color: #5b7ce3;
+        &:before{
+          border-color: white;
+        }
+      }
+    }
+    &.prev{
+      &:before{
+        left: 10px;
+        border-width: 2px 0 0 2px;
+        transform: rotate(-45deg);
+      }
+    }
+    &.next{
+      &:before{
+        left: 7px;
+        border-width: 2px 2px 0 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

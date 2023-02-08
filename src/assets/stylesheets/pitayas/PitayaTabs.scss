@@ -1,0 +1,55 @@
+.pitayaTabs{
+  .pageTitle{
+    color: #3c5587;
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .tabBar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    li{
+      margin: 0 30px 0 10px;
+      list-style: none;
+      a{
+        color: #8e99ad;
+        font-size: 16px;
+        font-weight: 300;
+        position: relative;
+        text-decoration: none;
+        &:after {
+          background-color: #5b7ce3;
+          border-radius: 2px;
+          bottom: -12px;
+          content: "";
+          height: 3px;
+          left: -10px;
+          position: absolute;
+          transition: all .3s;
+          width: 0px;
+        }
+        &.active{
+          font-weight: 500;
+          color: #2b303a;
+          &:after {
+            width: calc(100% + 20px);
+          }
+        }
+      }
+    }
+  }
+  .tabBarBottomLine{
+    margin: 10px -50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 576px) {
+    .tabBarBottomLine {
+      margin-left: -16px;
+      margin-right: -16px;
+    }
+  }
+}

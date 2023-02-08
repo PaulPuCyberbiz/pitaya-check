@@ -1,6 +1,15 @@
 {
   "compilerOptions": {
+    "baseUrl": "./", // relative paths base
     "target": "es5",
+    "paths": {
+      "*": ["typings/*"],
+      "@tests/*": ["tests/*"],
+      // WARNING: Require to add this to your webpack config -> resolve: { alias: { '@src': PATH_TO_SRC } }
+      "@src/*": ["src/*"], // will enable import aliases -> import { ... } from '@src/components'
+      // "redux": ["typings/redux"], // override library types with your alternative type-definitions in typings folder
+      "@stories/*": ["stories/*"]
+    },
     "lib": [
       "dom",
       "dom.iterable",
@@ -21,6 +30,11 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src/**/*",
+    "tests/**/*",
+    "typings/**/*",
+    "stories/**/*",
+    "types/declarations.d.ts",
+    "node_modules/@types/node/globals.d.ts",
   ]
 }

@@ -1,0 +1,25 @@
+.pitaya-hint {
+  height: 16px;
+  margin: 0 5px;
+  position: relative;
+  width: 16px;
+  .pitaya-hint-icon {
+    height: 100%;
+    position: relative;
+    z-index: 100;
+  }
+  .pitaya-hint-content {
+    display: none;
+    padding-top: 10px;
+    position: relative;
+    z-index: 101;
+  }
+  .pitayaRoundBox {
+    box-shadow: 0 0 13px 0 rgba(104, 104, 104, 0.5);
+  }
+  &:hover {
+    .pitaya-hint-content {
+      display: block;
+    }
+  }
+}

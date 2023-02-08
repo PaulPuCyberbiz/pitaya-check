@@ -1,0 +1,26 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+.pitayaRoundBox {
+  padding: 20px;
+  border: 1px solid #ebeff7;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  background-color: white;
+  color: #2b303a;
+  font-weight: initial;
+  h5 {
+    color: $ocean_blue;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  @media (max-width: 591px) {
+    border-radius: 0px;
+    margin: 0 -16px;
+    padding: 16px;
+  }
+}
+.pitayaRoundBox + .pitayaRoundBox {
+  margin-top: 30px;
+}

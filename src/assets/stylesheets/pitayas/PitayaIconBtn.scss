@@ -1,0 +1,76 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+$icons:
+  ".published" #5b7ce3 #4463c6,
+  ".unpublished" #3c5587 #2d4473,
+  ".delete" #ff6071 #e96071,
+  ".edit" #43c4e3 #31afcd,
+  ".add" #5b7ce3 #4463c6,
+  ".goToPage" #ff9271 #e38264;
+
+.pitayaIconBtn {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    height: 28px;
+    padding: 0px;
+    position: relative;
+    width: 28px;
+    svg{
+      height: 60%;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      width: 60%;
+      path {
+        fill: #fff;
+      }
+      &.question-mark {
+        path {
+          fill: $light_gray;
+        }
+      }
+    }
+    &:hover, &:focus {
+      outline: none;
+    }
+  }
+
+  .iconBtn-tooltip {
+    cursor: text;
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  @each $name, $bg-color, $bg-hover-color in $icons {
+    &#{$name} button {
+      background-color: #{$bg-color};
+      &:hover{
+        background-color: #{$bg-hover-color};
+      }
+    }
+  }
+
+  &.questionMark {
+    .iconBtn-tooltip {
+      border-radius: 5px;
+      box-shadow: 0 0 13px 0 rgba(104, 104, 104, 0.5);
+      background-color: #fff;
+      color: #000;
+      margin-top: 5px;
+      max-width: 400px;
+      padding: 20px 20px;
+      text-align: left;
+      &:before, &:after {
+        border-color: transparent;
+      }
+    }
+  }
+}

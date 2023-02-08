@@ -1,0 +1,125 @@
+.pitayaButton {
+  width: auto;
+  border: 1px solid #5b7ce3;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: background-color .3s, color .3s;
+  -ms-transition: background-color .3s, color .3s;
+  transition: background-color .3s, color .3s;
+  @import '@src/assets/stylesheets/pitayas/PitayaGrid.scss';
+
+  &.pitaya-lg {
+    padding: 0 27px;
+    min-width: 105px;
+  }
+
+  &.pitaya-sm {
+    padding: 0 10px;
+  }
+
+  &.pitaya-btn-primary {
+    background-color: #5b7ce3;
+    color: #fff;
+    &:hover, &:focus {
+      background-color: #4463c6
+    }
+  }
+
+  &.pitaya-btn-secondary {
+    background-color: #fff;
+    color: #5b7ce3;
+    &:hover, &:focus {
+      background-color: #5b7ce3;
+      color: #fff;
+    }
+  }
+
+  &.pitaya-btn-secondary-icon {
+    background-color: #fff;
+    color: #5b7ce3;
+    text-align: center;
+    &.pitaya-lg{
+      min-width: 105px;
+      padding-left: 50px;
+    }
+    &.pitaya-md{
+      padding-left: 40px;
+    }
+    &.pitaya-sm{
+      padding-left: 30px;
+    }
+    &:before {
+      background-color: #5b7ce3;
+      border-radius: 100%;
+      color: #fff;
+      content: "+";
+      font-weight: bolder;
+      height: 25px;
+      left: 15px;
+      line-height: 25px;
+      font-size: 18px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all .3s;
+      width: 25px;
+    }
+    &:hover, &:focus {
+      background-color: #5b7ce3;
+      color: #fff;
+      &:before {
+        background-color: #fff;
+        color: #5b7ce3;
+      }
+    }
+    &.pitaya-md {
+      padding-left: 32px;
+      padding-right: 8px;
+      &:before {
+        height: 20px;
+        left: 8px;
+        line-height: 18px;
+        width: 20px;
+      }
+    }
+
+    &.pitaya-sm {
+      padding-right: 8px;
+      &:before {
+        font-size: 10px;
+        font-weight: normal;
+        height: 15px;
+        left: 10px;
+        line-height: 14px;
+        width: 15px;
+      }
+    }
+  }
+
+  &.pitaya-btn-cancel {
+    background-color: #d6dff2;
+    border: none;
+    color: #8f96b0;
+    &:hover, &:focus {
+      background-color: #c3cde2;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled, &.btn-disabled {
+    background-color: #dedee0 !important;
+    border: 1px solid #dedee0 !important;
+    color: #8e99ad !important;
+    pointer-events: none !important;
+    &:before {
+      background-color: #8e99ad !important;
+      color: #dedee0 !important;
+    }
+  }
+}

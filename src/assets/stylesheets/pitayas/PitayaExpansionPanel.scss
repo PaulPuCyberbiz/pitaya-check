@@ -1,0 +1,48 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+.pitaya-expansion-panel {
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 0px;
+  > * {
+    margin: 0px;
+  }
+  .expansion-header {
+    cursor: pointer;
+    padding: 20px;
+    position: relative;
+    .title {
+      margin-right: 20px;
+    }
+    &:after {
+      border: solid $light_gray;
+      border-width: 2px 2px 0 0;
+      content: "";
+      height: 10px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-70%) rotateZ(135deg);
+      transition: transform .2s;
+      right: 20px;
+      width: 10px;
+    }
+  }
+
+  .content {
+    padding: 0 20px;
+    > * {
+      margin: 20px 0;
+    }
+  }
+
+  &.toggled {
+    border-radius: 5px;
+    .expansion-header {
+      border-bottom: 1px solid $havelock_blue;
+      border-radius: 5px 5px 0 0;
+      &:after {
+        transform: translateY(-30%) rotateZ(-45deg);
+      }
+    }
+  }
+}

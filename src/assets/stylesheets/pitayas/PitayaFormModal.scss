@@ -1,0 +1,62 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+.formModal {
+  background-color: #ffffff;
+  border-radius: 5px;
+  max-width: 500px;
+  position: relative;
+  width: 85vw;
+
+  button.closeModal {
+    @include close_button;
+  }
+
+  .formModal-body {
+    padding: 20px 20px 60px 20px;
+    width: 100%;
+    h1 {
+      color: $ocean_blue;
+      margin: 0 0 20px;
+      font-size: 15px;
+      line-height: 20px;
+    }
+    h2 {
+      line-height: 1em;
+    }
+    label{
+      color: $melon_black;
+      font-size: 14px;
+    }
+
+    > {
+      .pitayaSelect, .pitayaInput {
+        margin-bottom: 16px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+
+    // > *:last-child {
+    //   margin-bottom: 0px;
+    // }
+  }
+
+  .formModal-footer {
+    bottom: 0px;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    > button {
+      flex: 1 0 0;
+      border-radius: 0;
+      &:first-child {
+        border-radius: 0 0 0 4px;
+      }
+      &:last-child {
+        border-radius: 0 0 4px 0;
+      }
+    }
+  }
+}

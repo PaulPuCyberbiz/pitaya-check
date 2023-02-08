@@ -1,0 +1,74 @@
+.pitayaSwitch{
+  display: flex;
+  line-height: 24px;
+  label{
+    display: inline-block;
+    height: 24px;
+    margin: 0px;
+    min-width: 52px;
+    position: relative;
+    width: 52px;
+    .slider{
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border: 2px solid gray;
+      font-size: 12px;
+      &:before{
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 30px;
+        bottom: 2px;
+        background-color: gray;
+        border-radius: 16px;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      &:after{
+        position: absolute;
+        content: "OFF";
+        left: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  input{
+    display: none;
+    &:checked{
+      & + label .slider{
+        border: 2px solid #5b7ce3;
+        font-size: 12px;
+        text-align: right;
+        &:before{
+          background-color: #5b7ce3;
+          -webkit-transform: translateX(-28px);
+          -ms-transform: translateX(-28px);
+          transform: translateX(-28px);
+        }
+        &:after{
+          content: "ON";
+          left: 22px;
+        }
+      }
+    }
+  }
+  .round{
+    border-radius: 24px;
+  }
+  span.text {
+    margin-left: 10px;
+  }
+  &.disabled {
+    label .slider {
+      opacity: .5;
+    }
+  }
+}

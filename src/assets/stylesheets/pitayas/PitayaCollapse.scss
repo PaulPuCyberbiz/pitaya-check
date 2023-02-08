@@ -1,0 +1,19 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+.pitaya-collapse {
+  margin: 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .1s ease-out;
+
+  // Safari 14, react-select may not respect 0 max-height
+  &:not(.open) {
+    animation: hideAnimation 0s ease-in .1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes hideAnimation {
+    to {
+      visibility: hidden;
+    }
+  }
+}

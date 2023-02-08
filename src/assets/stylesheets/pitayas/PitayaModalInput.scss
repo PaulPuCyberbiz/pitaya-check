@@ -1,0 +1,36 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+.pitayaModalInput {
+  > label {
+    margin-bottom: 10px;
+  }
+  .input-blk {
+    .input_group > .input_block > .input_content {
+      position: relative;
+      border: 1px solid $light_border;
+      background-color: $white;
+      &:after {
+        border: solid $light_gray;
+        border-width: 2px 2px 0 0;
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-70%) rotateZ(135deg);
+        right: 20px;
+        height: 6px;
+        width: 6px;
+      }
+      &.disabled:hover, &.disabled:focus, &.disabled:focus-within {
+        border: 1px solid $primary_blue;
+        outline: none;
+      }
+      input {
+        margin-right: 40px;
+        &:disabled {
+          background-color: $white;
+          cursor: default;
+        }
+      }
+    }
+  }
+}

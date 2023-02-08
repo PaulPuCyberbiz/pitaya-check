@@ -1,0 +1,21 @@
+.pitayaRadios {
+  margin-bottom: 10px;
+
+  .radioItems {
+    > .radioItem {
+      &, & > * {
+        cursor: pointer;
+      }
+
+      > input {
+        margin-right: 8px;
+      }
+
+      &:hover > input:before {
+        height: 18px;
+        width: 18px;
+        border: 1px solid #5b7ce3;
+      }
+    }
+  }
+}

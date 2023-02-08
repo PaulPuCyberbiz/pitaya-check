@@ -1,0 +1,35 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+.pitayaLayout{
+  background-color: $alice_blue;
+  padding: 25px 50px;
+  * {
+    // override layout_admin
+    font-family: 'Noto Sans TC', sans-serif !important;
+  }
+  h1 {
+    color: $ocean_blue;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  h2 {
+    color: $ocean_blue;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    margin: 0;
+    line-height: 1; // override bootstrap
+  }
+  p, label {
+    color: $melon_black;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  a {
+    color: $primary_blue;
+  }
+
+  @media (max-width: 576px) {
+    padding: 16px;
+  }
+}

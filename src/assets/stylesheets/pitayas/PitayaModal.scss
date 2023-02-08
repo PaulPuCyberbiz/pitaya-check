@@ -1,0 +1,44 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+.pitayaModal {
+  @include backdrop;
+  color: $rhino_black;
+  .close-backdrop {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  .modal-container {
+    margin: auto;
+    z-index: 50001;
+  }
+}
+
+.pitaya-modal-enter {
+  opacity: 0;
+  .modal-container {
+    transform: scale(0.9);
+  }
+}
+.pitaya-modal-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+  .modal-container {
+    transform: translateX(0);
+    transition: transform 300ms;
+  }
+}
+.pitaya-modal-exit {
+  opacity: 1;
+  .modal-container {
+    opacity: 1;
+  }
+}
+.pitaya-modal-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+  .modal-container {
+    transform: scale(0.9);
+    transition: transform 300ms;
+  }
+}

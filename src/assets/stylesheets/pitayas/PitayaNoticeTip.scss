@@ -1,0 +1,35 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+.pitayaNoticeTip {
+  display: inline-flex;
+  align-items: flex-start;
+  padding: 10px 12px;
+  border-radius: 4px;
+  max-width: 100%;
+
+  > svg {
+    margin-top: 1px;
+    min-width: 16px;
+    min-height: 16px;
+    margin-right: 8px;
+    path {
+      fill: $primary_blue;
+    }
+  }
+  > span.text {
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    line-height: 1.5;
+  }
+
+  &.warning {
+    background-color: #ffecee;
+    svg {
+      path {
+        fill: $melon_red;
+      }
+    }
+    color: $rock_blue;
+  }
+}

@@ -1,0 +1,29 @@
+.pitayaPaginationSelect {
+  position: relative;
+
+  .select-group > .pitaya-select__control > .pitaya-select__indicators {
+    > .pitaya-select__indicator {
+      position: relative;
+    }
+  }
+
+  &.invalid {
+    .select-group > .pitaya-select__control {
+      border-color: #ff6071;
+    }
+  }
+
+  .alert_content {
+    margin-top: 10px;
+    color: #ff6071;
+  }
+
+  input.invisible-input {
+    padding: 0;
+    margin: 0;
+    height: 0;
+    border: none;
+    position: absolute;
+    width: 100%;
+  }
+}

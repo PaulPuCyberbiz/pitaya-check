@@ -1,0 +1,28 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+.pitayaSearch {
+  position: relative;
+  margin-bottom: 20px;
+
+  svg {
+    top: 50%;
+    left: 21px;
+    width: 18px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: $light_gray;
+  }
+
+  .pitayaInput {
+    margin-bottom: 0px;
+
+    > .input_group > .input_block input {
+      font-size: 14px;
+      line-height: 1.71;
+      color: $melon_black;
+      &.pitaya-lg, &.pitaya-md, &.pitaya-sm {
+        padding-left: 40px;
+      }
+    }
+  }
+}

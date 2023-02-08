@@ -1,0 +1,45 @@
+.pitayaActionSelector {
+  .select-all {
+    border: 1px solid #d6dff2;
+    border-radius: 5px;
+    height: 34px;
+    margin-bottom: 0px;
+    position: relative;
+    width: 180px;
+    padding: 6px 20px;
+    .pitayaCheckOptions {
+      height: 20px;
+      .pitayaCheckbox {
+        margin: 0;
+      }
+      .pitaya-select__control {
+        border: none !important;
+      }
+    }
+    label {
+      margin: 0;
+      color: #8f96b0;
+      font-size: 13px;
+      &:before {
+        height: 15px;
+        width: 15px;
+      }
+    }
+    [type="checkbox"]:checked + label {
+      &:after {
+        height: 9px;
+        transform: translate(6px, -63%) rotatez(45deg);
+        width: 4px;
+      }
+    }
+    &:hover {
+      label {
+        color: #5b7ce3;
+      }
+      border: 1px solid #5b7ce3;
+    }
+  }
+}
+.pitayaCheckOptions .pitaya-select .pitaya-select__control .pitaya-select__indicators:after {
+  right: 105px;
+}

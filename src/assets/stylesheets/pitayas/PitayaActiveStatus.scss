@@ -1,0 +1,12 @@
+.pitayaActiveStatus {
+  display: inline-block;
+  padding: 2px 8px;
+  color: white;
+  border-radius: 10px;
+  background-color: #8e99ad;
+  font-size: 12px;
+  line-height: 16px;
+  &.active{
+    background-color: #22d0ae;
+  }
+}

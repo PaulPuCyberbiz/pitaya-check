@@ -1,0 +1,36 @@
+.pitayaEditable {
+  .pitayaInput {
+    &.editable {
+      margin-bottom: 0;
+
+      .input_group {
+        .input_block {
+          .input_content {
+            padding: 0 4px;
+          }
+        }
+      }
+    }
+  }
+
+  form {
+    margin-bottom: 0;
+  }
+
+  > span {
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.editable-empty {
+      color: #8f96b0;
+      cursor: pointer;
+      display: inline-block;
+      height: 1.15em;
+      text-decoration: underline;
+      &.no-content {
+        width: 60px;
+      }
+    }
+  }
+}

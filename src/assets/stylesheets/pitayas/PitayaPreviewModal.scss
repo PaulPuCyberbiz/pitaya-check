@@ -1,0 +1,88 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+:local(.pitayaPreviewModal) {
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 1030;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 0;
+  margin: 0;
+
+  > .preview-modal-header {
+    padding: 0 20px;
+    margin: 0;
+    height: 58px;
+    background-color: rgb(242, 246, 252);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    > * {
+      margin-right: 16px;
+    }
+
+    > .preview-type-btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      svg g {
+        fill: $light_gray;
+      }
+      &:hover svg g, &.previewing svg g {
+        fill: $ocean_blue;
+      }
+    }
+
+    > .pitayaButton {
+      padding-left: 23px;
+      padding-right: 23px;
+    }
+  }
+
+  > .preview-container {
+    padding: 50px 0;
+    height: calc(100vh - 58px);
+    transition: all 0.3s;
+    position: relative;
+    left: 50%;
+
+    > .preview-content {
+      height: 100%;
+      width: 100%;
+      overflow-y: auto;
+    }
+  }
+}
+
+:local(.modal-enter) {
+  opacity: 0;
+  .preview-content {
+    transform: scale(0.9);
+  }
+}
+:local(.modal-enter-active) {
+  opacity: 1;
+  transition: opacity 300ms;
+  .preview-content {
+    transform: scale(1);
+    transition: transform 300ms;
+  }
+}
+:local(.modal-exit) {
+  opacity: 1;
+  .preview-content {
+    transform: scale(1);
+  }
+}
+:local(.modal-exit-active) {
+  opacity: 0;
+  transition: opacity 300ms;
+  .preview-content {
+    transform: scale(0.9);
+    transition: transform 300ms;
+  }
+}

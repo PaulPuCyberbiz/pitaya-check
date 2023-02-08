@@ -1,0 +1,49 @@
+.pitayaCheckbox {
+  display: flex;
+  .input-check {
+    height: 20px;
+    margin: 0px;
+    margin-right: 10px !important;  // to override the style in main.css.scss
+    position: relative;
+    width: 20px;
+    &:before {
+      background-color: #ffffff;
+      border: 1px solid #d6dff2;
+      border-radius: 3px;
+      content: " ";
+      height: 100%;
+      position: absolute;
+      transition: all .3s;
+      width: 100%;
+    }
+    &:hover {
+      &:before {
+        border: 1px solid #5b7ce3;
+      }
+    }
+    &:checked {
+      &:before {
+        background-color: #5b7ce3;
+        border: 1px solid #5b7ce3;
+      }
+      &:after {
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff;
+        content: " ";
+        height: 11px;
+        left: 8px;
+        position: absolute;
+        top: 3px;
+        transform: rotatez(45deg);
+        transition: all .3s;
+        width: 5px;
+      }
+    }
+    &:disabled{
+      &:before {
+        background-color: #ededee;
+        border: 1px solid #ededee;
+      }
+    }
+  }
+}

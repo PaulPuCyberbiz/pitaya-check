@@ -1,0 +1,72 @@
+.pitayaNumberCard {
+  background: #d6dff2;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 40px;
+  height: 150px;
+  &.withBenchmark {
+    padding-top: 29px;
+  }
+  .num-header {
+    width: 100%;
+    margin: 0 !important;
+  }
+  &:not(.withBenchmark) .num-header {
+    margin-bottom: 4px !important;
+  }
+  label.title {
+    font-size: 14px;
+    margin: 0 0 0 11.2px !important;
+    display: block;
+  }
+  p {
+    color: #8e99ad;
+    margin: 0;
+  }
+  .number {
+    width: 100%;
+    color: #3c5587;
+    font-size: 24px;
+    margin: 0 !important;
+  }
+  .pitayaIconBtn {
+    margin-bottom: 0;
+  }
+  .benchmark, .performance {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+  .benchmark {
+    color: #8e99ad;
+    margin: 12px 0 0 0 !important;
+  }
+  .high, .on_average {
+    color: #8e99ad;
+  }
+  .low {
+    color: #ff6071;
+  }
+}
+.number-card-tooltip {
+  border-radius: 5px;
+  box-shadow: 0 0 13px 0 rgba(104, 104, 104, 0.5);
+  padding: 20px;
+  white-space: pre-line;
+  &.show {
+    opacity: 1;
+  }
+  &::after {
+    display: none;
+  }
+  p {
+    color: #8e99ad;
+    margin: 8px 0 12px;
+    &:first-child {
+      margin-bottom: 5px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,171 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+
+@mixin pitayaCheckboxSelect {
+  .pitaya-checkbox-select {
+    .pitaya-select__menu-list {
+      border-bottom: none;
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+    .select-all {
+      color: #5b7ce3;
+      font-size: 13px;
+      padding: 4px 16px 8px 16px;
+      border: solid #d6dff2;
+      border-width: 0 1px 1px 1px;
+      border-radius: 5px;
+      margin-top: -4px;
+      cursor: pointer;
+    }
+  }
+}
+
+:local(.pitayaCheckboxSelectContainer) {
+  @include pitayaCheckboxSelect();
+}
+
+.pitaya-select {
+  font-size: 14px;
+  margin-bottom: 20px;
+  position: relative;
+  .select-title {
+    margin-bottom: 10px;
+  }
+  .select-group {
+    position: relative;
+    .pitaya-select__control {
+      border: 1px solid #d6dff2;
+      border-radius: 5px;
+      min-height: 0px;
+      .pitaya-select__value-container {
+        border: none;
+        padding-left: 16px;
+        padding-right: 24px;
+        .pitaya-select__placeholder {
+          color: #8e99ad;
+          opacity: 1;
+        }
+        .pitaya-select__input {
+          color: #8e99ad;
+          height: 25px;
+        }
+        .pitaya-select__multi-value {
+          background-color: #ebf5ff;
+          border-radius: 3px;
+          height: 25px;
+          .pitaya-select__multi-value__label {
+            color: $primary_blue;
+            font-weight: 500;
+          }
+          .pitaya-select__multi-value__remove {
+            cursor: pointer;
+            padding: 1px 5px;
+            > svg {
+              background-color: $primary_blue;
+              border-radius: 100%;
+              color: #fff;
+            }
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+      .pitaya-select__indicators {
+        .pitaya-select__clear-indicator {
+          padding-right: 0;
+        }
+
+        .pitaya-select__indicator-separator {
+          display: none;
+        }
+        .pitaya-select__dropdown-indicator {
+          padding: 0 10px;
+          svg {
+            fill: #8e99ad;
+            transition: all .3s;
+          }
+        }
+      }
+    }
+
+    &:hover .pitaya-select__control, .pitaya-select__control--is-focused {
+      border: 1px solid #5b7ce3;
+      box-shadow: none;
+      .pitaya-select__indicators {
+        .pitaya-select__dropdown-indicator svg {
+          fill: #5b7ce3;
+        }
+      }
+    }
+
+    .pitaya-select__control--menu-is-open {
+      .pitaya-select__indicators {
+        .pitaya-select__dropdown-indicator svg {
+          transform: rotateZ(-180deg);
+        }
+      }
+    }
+
+    &.pitaya-lg .pitaya-select__value-container {
+      &:not(.pitaya-select__value-container--is-multi){
+        height: 38px;
+      }
+      &.pitaya-select__value-container--is-multi{
+        min-height: 40px;
+      }
+    }
+
+    &.pitaya-md .pitaya-select__value-container{
+      height: 30px;
+      min-height: 0px;
+    }
+
+    &.pitaya-sm .pitaya-select__value-container{
+      height: 22px;
+      min-height: 0px;
+    }
+    .select {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: #fff;
+      border: 1px solid #d6dff2;
+      border-radius: 5px !important;
+      color: #2b303a;
+      font-size: 14px;
+      height: 42px;
+      line-height: 20px;
+      margin: 0;
+      min-height: 0;
+      padding: 10px 20px;
+      position: relative;
+      text-indent: 0;
+      width: 220px;
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        border-style: solid;
+        border-width: 6.9px 4px 0 4px;
+        border-color: #8e99ad transparent transparent transparent;
+      }
+    }
+  }
+
+  &.invalid {
+    .select-group .pitaya-select__control {
+      border-color: $melon_red;
+    }
+    .alert_content {
+      color: $melon_red;
+      margin-top: 5px;
+      margin-bottom: 0px;
+    }
+  }
+
+  @include pitayaCheckboxSelect();
+}

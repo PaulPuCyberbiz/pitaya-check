@@ -1,0 +1,81 @@
+.pitayaNestable_row {
+  display: flex;
+  >div {
+    display: flex;
+    align-items: center;
+  }
+}
+.pitayaNestable {
+  background: transparent;
+  height: 400px;
+  .rstcustom__node {
+    // margin-left: -36px;
+    .rstcustom__nodeContent {
+      width: 100%;
+      .nodeContent {
+        position: relative;
+      }
+    }
+  }
+  .rstcustom__highlight {
+    background: none;
+  }
+  .rowWrapper {
+    padding: 5px 0;
+    .pitayaButton.pitaya-btn-secondary-icon {
+      border: none;
+      margin-left: -10px;
+      &:hover {
+        background-color: transparent;
+        color: #2e4baa;
+        &:before {
+          background-color: #2e4baa;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .rowContents {
+    border: solid 1px #d6dff2;
+  }
+  .node_level_1, .node_level_3 {
+    color: #2b303a;
+    &.rowContents {
+      background-color: #fff;
+      &:hover {
+        background-color: #d6dff2;
+      }
+    }
+  }
+  .node_level_2 {
+    color: #2b303a;
+    &.rowContents {
+      background-color: #d6dff2;
+      &:hover {
+        background-color: #becdee;
+      }
+    }
+  }
+
+  .rowCancelPad {
+    * {
+      opacity: 0.4;
+    }
+    .rowContents {
+      background-color: rgba(221, 41, 41, 0.548);
+      border-color: rgba(221, 41, 41, 0.548);
+    }
+  }
+
+  .pitayaNestable_empty {
+    padding: 5px 0;
+    > div {
+      border-radius: 5px;
+      padding: 10px 38px;
+      cursor: not-allowed;
+      border: solid 1px #dedee0;
+      background-color: #ededee;
+      color: #8e99ad;
+    }
+  }
+}

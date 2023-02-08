@@ -1,0 +1,182 @@
+.pitaya-image-hosting {
+  margin: 0px;
+  .sortable-container {
+    gap: 16px;
+    margin: 0 -10px 10px 0;
+    padding-bottom: 1px;
+    overflow-y: auto;
+    max-height: 56vh;
+    display: flex;
+    flex-wrap: wrap;
+    .photo-display {
+      cursor: pointer;
+      width: 138px;
+      height: 138px;
+      overflow: hidden;
+      border-radius: 5px;
+      border: solid 1px #d6dff2;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.selected {
+        border: solid 1px #5b7ce3;
+      }
+      &:hover {
+        background-color:rgba(0, 0, 0, 0.4);
+        img {
+          opacity: 0.6;
+        }
+        .icons {
+          .delete, .circle {
+            opacity: 1;
+          }
+        }
+      }
+      img {
+        max-height: 100%;
+        width: auto;
+      }
+      .icons {
+        transition: all .3s;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        svg {
+          position: absolute;
+          right: 5px;
+          top: 110px;
+          cursor: all-scroll;
+        }
+        .delete, .circle {
+          position: absolute;
+          transition: all .3s;
+          opacity: 0;
+        }
+        .circle {
+          left: 8px;
+          top: 8px;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          border: solid 1px #d6dff2;
+          background-color: #fff;
+          &.selected{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+            border: solid 1px #5b7ce3;
+            &.selected-single::after {
+              content: "";
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background-color: #5b7ce3;
+            }
+            &.selected-multiple {
+              background: #5b7ce3;
+              position: relative;
+              > .selected-order {
+                position: absolute;
+                color: #fff;
+              }
+            }
+          }
+        }
+        .delete {
+          height: 22px;
+          width: 22px;
+          right: 5px;
+          top: 5px;
+          font-size: 14px;
+          &::before, &::after {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .photo-upload-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #8e99ad;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    border: 1px dashed #d6dff2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    &:focus {
+      outline: none;
+    }
+    button {
+      margin-top: 15px;
+    }
+    .hint {
+      font-size: 13px;
+    }
+    .photoLabel {
+      display: none;
+    }
+    .title {
+      margin: 15px 0;
+    }
+  }
+  .confirm-modal {
+    .formModal-body {
+      border-radius: 5px;
+      box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.5);
+      height: 136px;
+      .confirm-description {
+        color: #2b303a;
+        text-align: center;
+        margin-top: 15px;
+      }
+    }
+    .pitaya-btn-cancel {
+      color: #2b303a;
+    }
+    .yes-button {
+      border: none;
+      background-color: #ff6071;
+      &:hover {
+        background-color: #D84050;
+      }
+    }
+  }
+}
+
+.product-upload-helper {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  img {
+    max-height: 100%;
+    width: auto;
+  }
+  .icons {
+    transition: all .3s;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    svg {
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      cursor: pointer;
+    }
+    .delete, .circle {
+      opacity: 0;
+    }
+  }
+}

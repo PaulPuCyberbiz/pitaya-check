@@ -1,0 +1,18 @@
+.pitayaConfirmHeader {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #fff;
+  z-index: 1030;
+  height: 60px;
+  width: calc(100% - 250px);
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  .back-link {
+    margin-right: 16px;
+  }
+  @media (max-width: 991px) {
+    display: none;
+  }
+}

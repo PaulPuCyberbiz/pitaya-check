@@ -1,0 +1,69 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+.pitaya-tree {
+  width: 100%;
+  & > div > .pitaya-group {
+    border-bottom: 1px solid $havelock_blue;
+    margin-bottom: 8px;
+  }
+  .expansion-header {
+    cursor: pointer;
+    margin-bottom: 0px;
+    position: relative;
+    &:after {
+      border: solid $light_gray;
+      border-width: 2px 2px 0 0;
+      content: "";
+      height: 10px;
+      position: absolute;
+      top: 45%;
+      transform: translateY(-70%) rotateZ(135deg);
+      transition: transform .2s;
+      right: 7px;
+      width: 10px;
+      box-sizing: border-box;
+    }
+    .checkbox-container {
+      display: inline-block;
+      margin-bottom: 8px;
+      margin-top: 8px;
+    }
+    .pitayaCheckbox {
+      display: inline-block;
+      &.half-checked .pitayaCheckbox__label {
+        &::after {
+          left: 13px;
+        }
+      }
+    }
+  }
+  .toggled > .expansion-header {
+    &:after{
+      transform: translateY(-30%) rotateZ(-45deg);
+    }
+  }
+  .checkbox-label {
+    font-size: 14px;
+    top: -3px;
+    position: relative;
+  }
+  .checkbox-container {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    display: flex;
+    margin-right: 20px;
+  }
+  .pitayaCheckbox {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .pitaya-collapse {
+    margin-left: 20px;
+    .expansion-header {
+      padding-left: 0px;
+    }
+    .pitaya-collapse {
+      margin-left: 25px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.pitaya-queue-loading {
+  position: relative;
+  .loading-block {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding: 45px 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &.msg {
+      padding: 35px 25px 25px;
+      width: 256px;
+    }
+    > * {
+      color: #fff;
+      margin-top: 5px;
+    }
+    svg {
+      color: #fff;
+      -webkit-animation: fa-spin 2s infinite linear;
+      animation: fa-spin 2s infinite linear;
+      height: 50px;
+      width: 50px;
+      position: absolute;
+    }
+  }
+}

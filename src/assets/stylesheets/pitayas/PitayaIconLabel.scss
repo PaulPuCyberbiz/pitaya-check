@@ -1,0 +1,51 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+.pitaya-icon-label {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  svg {
+    margin-right: 8px;
+    path {
+      fill: $primary_blue;
+    }
+  }
+  .text {
+    font-size: 14px;
+    color: $primary_blue;
+  }
+
+  &:hover {
+    svg {
+      path {
+        fill: $primary_hover;
+      }
+    }
+    .text {
+      color: $primary_hover;
+      font-weight: bolder;
+    }
+  }
+
+  &.download, &.import {
+    svg {
+      margin-right: 4px;
+    }
+  }
+
+  &.addCircle {
+    path {
+      fill: $white;
+    }
+  }
+
+  &.disabled {
+    circle {
+      fill: #aaaaaa;
+    }
+    .text {
+      color: $rock_blue;
+    }
+    pointer-events: none;
+  }
+}

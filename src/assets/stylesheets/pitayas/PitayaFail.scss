@@ -1,0 +1,25 @@
+.pitayaFail{
+  height: 70vh;
+  position: relative;
+  width: 100%;
+  .error-message{
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    img{
+      margin-bottom: 50px;
+    }
+    h2{
+      color: #3c5587;
+      font-weight: 900;
+      font-size: 40px;
+    }
+    h3{
+      color: #3c5587;
+      font-weight: 500;
+      font-size: 28px;
+    }
+  }
+}

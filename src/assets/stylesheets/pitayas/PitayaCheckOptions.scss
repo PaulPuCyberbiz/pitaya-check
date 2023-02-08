@@ -1,0 +1,30 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+.pitaya-check-options {
+  margin-bottom: 0px;
+  position: relative;
+  .pitayaCheckbox {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+  }
+  .pitaya-check-options__select {
+    flex-grow: 1;
+    height: 100%;
+    margin: 0px;
+    width: 100%;
+    .pitaya-select__single-value {
+      color: transparent;
+    }
+    .pitaya-select__control .pitaya-select__indicators:after {
+      left: 50px;
+    }
+  }
+
+  .pitaya-check-options__label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 42px;
+  }
+}

@@ -1,0 +1,256 @@
+$row-padding: 5px;
+$hover-padding: 5px;
+.rowWrapper {
+  padding: 5px 0;
+  height: 100%;
+  box-sizing: border-box;
+  cursor: move;
+
+  &:hover {
+    opacity: 0.7;
+    padding: $hover-padding $hover-padding $hover-padding 0;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  .row {
+    margin: 0;
+  }
+}
+
+.rowWrapperDragDisabled {
+  cursor: default;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.row {
+  height: 100%;
+  white-space: nowrap;
+  display: flex;
+  & > * {
+    box-sizing: border-box;
+  }
+}
+
+.rowLandingPad, .rowCancelPad {
+  * {
+    opacity: 0.4;
+  }
+}
+
+/**
+ * Nodes matching the search conditions are highlighted
+ */
+.rowSearchMatch {
+  outline: solid 1px #0080ff;
+}
+
+/**
+ * The node that matches the search conditions and is currently focused
+ */
+.rowSearchFocus {
+  outline: solid 1px #fc6421;
+}
+
+%rowItem {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.rowContents {
+  @extend %rowItem;
+  background-color: #5b7ce3;
+  border: 1px solid #5b7ce3;
+  border-radius: 5px;
+  color: #fff;
+  position: relative;
+  height: 100%;
+  padding: 0 10px 0 80px;
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  width: 1%;
+}
+
+.rowLabel {
+  @extend %rowItem;
+  flex: 0 1 auto;
+  width: 100%;
+}
+
+.rowToolbar {
+  @extend %rowItem;
+  flex: 0 1 auto;
+  display: flex;
+}
+
+.moveHandle {
+  @extend %rowItem;
+
+  height: 100%;
+  width: 44px;
+  background: #d9d9d9
+    url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MiIgaGVpZ2h0PSI0MiI+PGcgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjIuOSIgPjxwYXRoIGQ9Ik0xNCAxNS43aDE0LjQiLz48cGF0aCBkPSJNMTQgMjEuNGgxNC40Ii8+PHBhdGggZD0iTTE0IDI3LjFoMTQuNCIvPjwvZz4KPC9zdmc+')
+    no-repeat center;
+  border: solid #aaa 1px;
+  box-shadow: 0 2px 2px -2px;
+  cursor: move;
+  border-radius: 1px;
+  z-index: 1;
+}
+
+.loadingHandle {
+  @extend .moveHandle;
+
+  cursor: default;
+  background: #d9d9d9;
+}
+
+@keyframes pointFade {
+  0%,
+  19.999%,
+  100% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+}
+
+.loadingCircle {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  position: relative;
+}
+
+.loadingCirclePoint {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  $point-count: 12;
+  $spin-animation-time: 800ms;
+
+  &:before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 11%;
+    height: 30%;
+    background-color: #fff;
+    border-radius: 30%;
+    animation: pointFade $spin-animation-time infinite ease-in-out both;
+  }
+
+  @for $i from 1 through floor(calc(($point-count + 1) / 2)) {
+    &:nth-of-type(#{$i}) {
+      transform: rotate(calc(360deg / $point-count * ($i - 1)));
+    }
+
+    &:nth-of-type(#{$i + floor(calc($point-count / 2))}) {
+      transform: rotate(calc(180deg + 360deg / $point-count * ($i - 1)));
+    }
+
+    &:nth-of-type(#{$i}),
+    &:nth-of-type(#{$i + floor(calc($point-count / 2))}) {
+      &:before {
+        animation-delay: calc(($spin-animation-time /
+              $point-count * 2 * ($i - 1)) - $spin-animation-time);
+      }
+    }
+  }
+}
+
+.toolbarButton {
+  @extend %rowItem;
+}
+
+.rowTitle {
+  font-weight: bold;
+}
+
+.rowTitleWithSubtitle {
+  display: block;
+}
+
+.rowSubtitle {
+  font-size: 70%;
+  line-height: 0.7;
+  width: 95%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.dragIcon {
+  height: 21px;
+  margin-left: -60px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.collapseButton,
+.expandButton {
+  appearance: none;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  margin-left: 40px;
+  padding: 0px;
+  position: absolute;
+  top: 0px;
+  transition: all .3s;
+  width: 40px;
+  z-index: 1000;
+  &:focus {outline:0;}
+  &:before {
+    // content: "\25bc";
+    border: #8e99ad solid;
+    border-width: 1.5px 1.5px 0 0;
+    content: "";
+    font-size: 10px;
+    height: 5px;
+    left: 50%;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    transition: transform .2s;
+    width: 5px;
+  }
+}
+
+.expandButton:before{
+  transform: translate(-50%, -50%) rotateZ(45deg);
+}
+
+.collapseButton:before{
+  transform: translate(-50%, -50%) rotateZ(135deg);
+}
+
+/**
+ * Line for under a node with children
+ */
+.lineChildren {
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+}
+
+.contentContainer {
+  width: 75%;
+}

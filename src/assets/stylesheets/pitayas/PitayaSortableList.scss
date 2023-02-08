@@ -1,0 +1,198 @@
+@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+
+.pitayaSortableContainer {
+  width: 100%;
+  overflow: auto;
+  position: relative;
+
+  .empty-row {
+    width: 100%;
+    padding: 32px 8px;
+    text-align: center;
+    color: $light_gray;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+  }
+
+  .pitayaSortable-colsCollapse {
+    > span {
+      font-size: 13px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+  }
+}
+
+.pitayaSortableRow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  min-width: 1200px;
+  flex-shrink: 0;
+
+  > .drag-handle {
+    min-width: 25px;
+    height: 25px;
+    margin-right: 10px;
+
+    > .drag-icon {
+      user-select: none;
+      padding-left: 2px;
+      cursor: grab;
+    }
+  }
+  > .position-input {
+    width: 60px;
+    text-align: left;
+    > span.pitayaIconBtn.questionMark {
+      margin-right: 0;
+    }
+  }
+  > .collapse {
+    flex: 0;
+    padding: 10px;
+    display: grid;
+    place-content: center;
+    margin: 0;
+    .arrow {
+      cursor: default;
+      fill: #8e99ad;
+      transition: transform 0.3s;
+      transform: rotate(-180deg);
+    }
+    &.collapsed .arrow {
+      transform: rotate(0deg);
+    }
+  }
+  > .sortable-column {
+    flex: 1;
+    margin: 0 8px;
+  }
+
+  &.header-row {
+    padding-top: 0;
+    font-size: 13px;
+    color: $manatee_purple;
+    letter-spacing: 0.24pt;
+
+    .pitaya-select {
+      margin: 0px;
+      .select-group .pitaya-select__control {
+        border: none;
+        .pitaya-select__value-container {
+          padding-left: 0px;
+        }
+        .pitaya-select__single-value {
+          color: $manatee_purple;
+          padding-right: 20px;
+          &:after {
+            border: solid #8e99ad;
+            border-width: 0 2px 2px 0;
+            display: block;
+            content: '';
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            top: 40%;
+            right: 5px;
+            transition: all .3s;
+            transform: scale(0.8, 0.85) translateY(-70%) rotateZ(45deg);
+          }
+        }
+        .pitaya-select__indicators {
+          display: none;
+        }
+        &.pitaya-select__control--menu-is-open {
+          .pitaya-select__single-value {
+            &:after {
+              transform: scale(0.8, 0.85) translateY(-30%) rotateZ(-135deg);
+            }
+          }
+        }
+      }
+    }
+
+    .__react_component_tooltip {
+      color: $light_gray;
+      white-space: pre-line;
+      border-radius: 5px;
+      box-shadow: 0 0 13px 0 rgba(104, 104, 104, 0.5);
+      background-color: #ffffff;
+      opacity: 1;
+      padding: 20px;
+      &#position-tooltip {
+        width: 326
+      }
+      &.place-bottom::after {
+        border-bottom: none;
+      }
+      h2 {
+        line-height: initial;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &.item-row {
+    border: 1px solid $light_border;
+    border-radius: 5px;
+    background-color: $white;
+    margin-bottom: 8px;
+
+    &.disabled, &.empty {
+      background-color: $disabled;
+      color: $light_gray;
+    }
+
+    > .position-input {
+      * {
+        text-align: center;
+        width: 50px;
+      }
+      .pitayaInput {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.wrap-cell {
+    min-width: 100%;
+    word-break: break-all;
+
+    .sortable-column {
+      white-space: pre-wrap;
+    }
+  }
+  &.grabbing {
+    min-width: 0;
+
+    > .drag-handle {
+      > .drag-icon {
+        pointer-events: auto;
+
+        &:hover {
+          cursor: grabbing;
+        }
+      }
+    }
+  }
+}
+
+.with-collapse-content {
+  margin-bottom: 10px;
+  border: 1px solid $light_border;
+  border-radius: 5px;
+
+  > .pitayaSortableRow {
+    border: none;
+    margin-bottom: 0;
+  }
+
+  > .collapse-content {
+    width: 100%;
+    border-top: 1px solid $light_border;
+  }
+}
