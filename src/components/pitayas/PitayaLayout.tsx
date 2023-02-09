@@ -3,7 +3,7 @@ import styles from '@src/assets/stylesheets/pitayas/PitayaLayout.scss';
 
 export type PitayaLayoutProps = React.HTMLAttributes<HTMLElement>;
 
-const PitayaLayout: React.SFC<PitayaLayoutProps> = (
+const PitayaLayout: React.FC<PitayaLayoutProps> = (
   props: PitayaLayoutProps,
 ) => {
   const { className, ...rest } = props;

@@ -6,3 +6,5 @@ export * from './htmlAttributeRemover';
 export * from './reorderHelper';
 export * from './deprecationWarning';
 export * from './sortHelper';
+export * from './defaultStyle';
+export * from './getDataUrl';

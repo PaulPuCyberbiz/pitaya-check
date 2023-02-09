@@ -1,7 +1,7 @@
 import React from 'react';
 
-import PitayaFlex from '@src/components/pitayas/PitayaFlex.tsx';
-import PitayaRadios from '@src/components/pitayas/PitayaRadios.tsx';
+import PitayaFlex from '@src/components/pitayas/PitayaFlex';
+import PitayaRadios from '@src/components/pitayas/PitayaRadios';
 import PitayaDateTimePicker, {
   PitayaDateTimePickerProps,
 } from '@src/components/pitayas/PitayaDateTimePicker';

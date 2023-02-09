@@ -3,7 +3,7 @@ import React from 'react';
 import { MemoryRouter } from 'react-router';
 
 import FlexStory from '@stories/components/FlexStory';
-import PitayaFail from '@src/components/pitayas/PitayaFail.tsx';
+import PitayaFail from '@src/components/pitayas/PitayaFail';
 import BreadcrumbStorybook from '@stories/breadcrumbStorybook';
 import FormModalStorybook from '@stories/formStorybook';
 import ButtonStorybook from '@stories/buttonStorybook';

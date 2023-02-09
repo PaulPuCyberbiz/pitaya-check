@@ -16,7 +16,7 @@ interface ChangePageBtnProps {
   onClick: () => void;
 }
 
-const ChangePageBtn: React.SFC<ChangePageBtnProps> = props => {
+const ChangePageBtn: React.FC<ChangePageBtnProps> = props => {
   const { type, onClick } = props;
 
   return <button className={`changePageBtn ${type}`} onClick={onClick} />;
@@ -32,7 +32,7 @@ interface PageBtnProps {
   onClick: () => void;
 }
 
-const PageBtn: React.SFC<PageBtnProps> = props => {
+const PageBtn: React.FC<PageBtnProps> = props => {
   const { type, onClick } = props;
 
   return (

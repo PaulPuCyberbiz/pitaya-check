@@ -5,7 +5,7 @@ interface PitayaActiveStatusProps {
   isActivated: boolean;
 }
 
-const PitayaActiveStatus: React.SFC<PitayaActiveStatusProps> = props => {
+const PitayaActiveStatus: React.FC<PitayaActiveStatusProps> = props => {
   const { t } = useTranslation('Pitaya');
   const { isActivated } = props;
   return (

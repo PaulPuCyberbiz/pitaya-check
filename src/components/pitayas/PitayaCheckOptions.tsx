@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import PitayaSelect from '@src/components/pitayas/PitayaSelect';
 import PitayaCheckbox from '@src/components/pitayas/PitayaCheckbox';
-import { OptionType } from '@src/types/BaseType';
+import { OptionType } from '@src/types/BaseTypes';
 import styles from '@src/assets/stylesheets/pitayas/PitayaCheckOptions.scss';
 
 export interface PitayaCheckOptionsProps
