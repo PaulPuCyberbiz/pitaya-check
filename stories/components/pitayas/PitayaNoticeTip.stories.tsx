@@ -2,7 +2,7 @@ import React from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 
-import PitayaGroup from '@src/components/pitayas/PitayaGroup.tsx';
+import PitayaGroup from '@src/components/pitayas/PitayaGroup';
 import PitayaFlex, { FlexJustify } from '@src/components/pitayas/PitayaFlex';
 import PitayaRoundBox from '@src/components/pitayas/PitayaRoundBox';
 import CodeBlock from '@src/components/CodeBlock';

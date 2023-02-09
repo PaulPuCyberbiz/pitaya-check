@@ -1,7 +1,7 @@
 import React from 'react';
 import PitayaActionSelector from '@src/components/pitayas/PitayaActionSelector';
 import { CheckStatus } from '@src/components/pitayas/types/CheckStatus';
-import { OptionType } from '@src/features/collection/types';
+import { OptionType } from '@src/types/BaseType';
 import PitayaGroup from '@src/components/pitayas/PitayaGroup';
 import PitayaLayout from '@src/components/pitayas/PitayaLayout';
 import PitayaFlex from '@src/components/pitayas/PitayaFlex';

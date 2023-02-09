@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PitayaCheckboxSelect from '@src/components/pitayas/PitayaCheckboxSelect';
-import { OptionType } from '@src/features/collection/types';
+import { OptionType } from '@src/types/BaseType';
 import { Layout } from '@stories/Layout';
 import PitayaGroup from '@src/components/pitayas/PitayaGroup';
 

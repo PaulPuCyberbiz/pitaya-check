@@ -37,6 +37,6 @@
     "typings/**/*",
     "stories/**/*",
     "types/declarations.d.ts",
-    "node_modules/@types/node/globals.d.ts",
+    "node_modules/@types/node/globals.d.ts", "stories",
   ]
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
 
-import PitayaGroup from '@src/components/pitayas/PitayaGroup.tsx';
+import PitayaGroup from '@src/components/pitayas/PitayaGroup';
 import PitayaFlex, {
   FlexJustify,
-} from '@src/components/pitayas/PitayaFlex.tsx';
+} from '@src/components/pitayas/PitayaFlex';
 import PitayaRoundBox from '@src/components/pitayas/PitayaRoundBox';
-import { PitayaIconBtn } from '@src/components/pitayas/PitayaIconBtn.tsx';
+import { PitayaIconBtn } from '@src/components/pitayas/PitayaIconBtn';
 import { PitayaIconLabel } from '@src/components/pitayas/PitayaIconLabel';
 
 import { Layout } from '@stories/Layout';
