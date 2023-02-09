@@ -1,11 +1,6 @@
-import { Action, AnyAction } from 'redux';
 import { i18n as I18n } from 'i18next';
-import { ThunkAction, ThunkDispatch } from 'redux-thunk';
 
-import { StoreState } from '@src/Store';
-import { ErrorAction } from '@src/ReduxTypes';
 import { FileData } from '@src/components/pitayas/PitayaFileInput';
-import { AdminUserDataProps } from '@src/admin';
 
 declare global {
   interface Window {
@@ -13,7 +8,6 @@ declare global {
     I18n: { locale: string };
     CKEDITOR: CKEDITOR;
     brand_url: string;
-    renderAdmin: (id: string, staticProps: AdminUserDataProps) => void;
     info_warning: (s: string) => void;
     cyberBizPay: {
       init: (
@@ -83,49 +77,6 @@ export interface GroupOptionType {
 }
 
 export type StringObjType = { [key: string]: any };
-
-export interface VoidableIdAction extends Action {
-  id: Voidable<number>;
-}
-
-export type TDispatch = ThunkDispatch<StoreState, {}, AnyAction>;
-export type TAction = ThunkAction<Promise<void>, StoreState, {}, AnyAction>;
-
-export interface IdAction extends Action {
-  id: number;
-}
-
-export interface FileAction extends Action {
-  file: FileData;
-}
-
-export interface StringAction extends Action {
-  value: string;
-}
-
-export interface CheckedAction extends Action {
-  checked: boolean;
-}
-
-export interface NumberAction extends Action {
-  value: number;
-}
-
-export interface OptionTypeAction extends Action {
-  option: OptionType;
-}
-
-export function getErrorAction(action: Action): ErrorAction {
-  return action as ErrorAction;
-}
-
-export function getFileAction(action: Action): FileAction {
-  return action as FileAction;
-}
-
-export function getStringAction(action: Action): StringAction {
-  return action as StringAction;
-}
 
 export enum ShopPluginCode {
   GLOBAL_FRONTEND_PAGE = 'global_frontend_page',

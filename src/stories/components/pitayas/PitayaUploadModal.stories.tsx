@@ -5,7 +5,7 @@ import PitayaLayout from '@src/components/pitayas/PitayaLayout';
 import PitayaButton from '@src/components/pitayas/PitayaButton';
 import PitayaUploadModal from '@src/components/pitayas/PitayaUploadModal';
 import { PitayaIconLabel } from '@src/components/pitayas/PitayaIconLabel';
-import { convertToBytes, Unit } from '@src/helpers';
+import { convertToBytes, Unit } from '@src/helpers/converters';
 
 export default {
   title: 'Pitaya / UploadModal',

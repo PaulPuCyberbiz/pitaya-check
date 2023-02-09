@@ -24,6 +24,8 @@
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "importHelpers": true, // importing transpilation helpers from tslib
+    "noEmitHelpers": true, // disable inline transpilation helpers in each file
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,

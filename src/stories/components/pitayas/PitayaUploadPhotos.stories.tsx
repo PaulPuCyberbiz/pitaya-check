@@ -5,7 +5,7 @@ import PitayaLayout from '@src/components/pitayas/PitayaLayout';
 import PitayaRoundBox from '@src/components/pitayas/PitayaRoundBox';
 import PitayaUploadPhotos from '@src/components/pitayas/PitayaUploadPhotos/PitayaUploadPhotos';
 import { Photo } from '@src/components/pitayas/PitayaUploadPhotos/Photo';
-import { convertToBytes, Unit } from '@src/helpers';
+import { convertToBytes, Unit } from '@src/helpers/converters';
 
 export default {
   title: 'Pitaya / UploadPhotos',

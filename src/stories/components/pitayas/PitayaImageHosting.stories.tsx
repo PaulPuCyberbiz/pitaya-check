@@ -2,7 +2,7 @@ import React from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
 import PitayaLayout from '@src/components/pitayas/PitayaLayout';
 import PitayaRoundBox from '@src/components/pitayas/PitayaRoundBox';
-import { convertToBytes, Unit } from '@src/helpers';
+import { convertToBytes, Unit } from '@src/helpers/converters';
 import { PitayaImageHosting } from '@src/components/pitayas/PitayaImageHosting/PitayaImageHosting';
 import { ShopThemePhoto } from '@src/components/pitayas/PitayaImageHosting/ShopThemePhoto';
 import ReactMarkdown from 'react-markdown';
