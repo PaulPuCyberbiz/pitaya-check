@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import ReactDOM from 'react-dom';
+import { createPortal } from 'react-dom';
 
 type PitayaPortalProps = Pick<
   React.HTMLAttributes<HTMLElement>,
@@ -29,5 +29,5 @@ export const PitayaPortal = ({
     document.body.appendChild(target.current);
   }
 
-  return ReactDOM.createPortal(children, target.current);
+  return createPortal(children, target.current);
 };

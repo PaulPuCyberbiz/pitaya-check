@@ -1,0 +1,29 @@
+{
+  "presets": [
+    // "@babel/preset-env",
+    "@babel/preset-react",
+    ["@babel/preset-typescript", { "allowNamespaces": true }]
+  ],
+  // "plugins": [
+  //   "@babel/plugin-transform-async-to-generator",
+  //   "@babel/plugin-transform-runtime",
+  //   "transform-class-properties",
+  //   "@babel/proposal-class-properties",
+  //   "@babel/proposal-object-rest-spread",
+  //   "@babel/plugin-proposal-optional-chaining",
+  //   "babel-plugin-lodash",
+  //   "babel-plugin-styled-components"
+  // ],
+  "sourceMaps": "both",
+  "env": {
+    "production": {
+      "presets": [["minify", { "undefinedToVoid": true, "builtIns": false }]],
+      // "plugins": ["transform-remove-console"],
+      "sourceMaps": false
+    }
+    // "cypressTest": {
+    //   "plugins": ["istanbul"],
+    //   "sourceMaps": false
+    // }
+  }
+}

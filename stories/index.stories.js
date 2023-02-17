@@ -38,9 +38,9 @@ library.add(faEye, faEyeSlash, faEdit, faTrashAlt, faPlus);
 export default {
   title: 'Pitaya',
 
-  // decorators: [
-  //   story => <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>,
-  // ],
+  decorators: [
+    story => <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>,
+  ],
 };
 
 // export const PitayaFlex = () => <FlexStory />;

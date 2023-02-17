@@ -91,6 +91,8 @@ module.exports = function (env, argv) {
   const useHttps = argv && argv.https;
   const protocol = useHttps ? 'https' : 'http';
 
+  console.log('check!!!!!')
+
   return {
     entry: {
       app: './src/app.tsx',
@@ -169,7 +171,7 @@ module.exports = function (env, argv) {
       extensions: ['*', '.ts', '.tsx', '.js', '.jsx', '.scss'],
       modules: ['node_modules'],
       alias: {
-        '@src': path.resolve('./src/'),
+        '@src': path.resolve('../../src/'),
       },
       plugins: [
         new TsconfigPathsPlugin({
