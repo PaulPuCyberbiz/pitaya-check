@@ -1,4 +1,5 @@
 const path = require('path');
+const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
 
 module.exports = {
   "stories": [
@@ -12,6 +13,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "@storybook/preset-create-react-app",
+    // "@storybook/preset-scss",
   ],
   "framework": "@storybook/react",
   "core": {
@@ -24,7 +26,7 @@ module.exports = {
       extensions: ['.ts', '.tsx', '.js', '.jsx', '.css', '.scss'],
       alias: {
         '@src': path.join(__dirname, '../src/'),
-        // '@stories': path.resolve('../src/components/stories/'),
+        '@stories': path.resolve('../src/components/stories/'),
       },
     };
     config.module.rules.push(
@@ -36,7 +38,7 @@ module.exports = {
     );
     // config.plugins.push(new MonacoWebpackPlugin());
     // console.log(config.module.rules);
-    config.stats = { loggingDebug: ['sass-loader'] }
+    // config.stats = { loggingDebug: ['sass-loader'] }
     return config;
   },
 }

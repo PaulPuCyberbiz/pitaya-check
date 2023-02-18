@@ -1,4 +1,4 @@
-@import '@src/assets/stylesheets/pitayas/PitayaMixin.scss';
+@import '@src/assets/stylesheets/pitayas/PitayaMixin';
 
 .pitayaLayout{
   background-color: $alice_blue;
@@ -32,4 +32,8 @@
   @media (max-width: 576px) {
     padding: 16px;
   }
+}
+
+.title{
+  color:blue;
 }

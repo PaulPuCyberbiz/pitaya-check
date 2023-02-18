@@ -1,5 +1,6 @@
 declare module '*.scss' {
   const content: { [className: string]: string };
+  console.log({ content })
   export = content;
 }
 

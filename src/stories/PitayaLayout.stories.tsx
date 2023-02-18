@@ -67,6 +67,7 @@ const Comp = () => (
       <SideMenu>選單</SideMenu>
       <Content>
         <PitayaLayoutComp style={{ width: '100%', height: '100%' }}>
+          123423445
           {`PitayaLayout: 可以自動套用一些後台style guide的樣式`}
           <StyledMarkdown source={code} renderers={{ code: CodeBlock }} />
           <p>{`加入 background-color: #f2f6fc`}</p>

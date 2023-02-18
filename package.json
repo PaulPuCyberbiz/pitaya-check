@@ -106,8 +106,8 @@
     "@storybook/addon-actions": "~6.4.0",
     "@storybook/addon-essentials": "~6.4.0",
     "@storybook/addon-interactions": "~6.4.0",
-    "@storybook/addon-links": "~6.4.0",
     "@storybook/addon-knobs": "~6.4.0",
+    "@storybook/addon-links": "~6.4.0",
     "@storybook/builder-webpack5": "~6.4.0",
     "@storybook/manager-webpack5": "~6.4.0",
     "@storybook/node-logger": "~6.4.0",
@@ -144,6 +144,7 @@
     "typescript": "^3.7.2",
     "webpack": "^5.75.0",
     "webpack-bundle-analyzer": "^3.6.1",
+    "webpack-cli": "^5.0.1",
     "webpack-manifest-plugin": "^2.2.0"
   }
 }
