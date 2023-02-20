@@ -3,7 +3,7 @@ import { Trans } from 'react-i18next';
 // @ts-ignore
 import ErrorWarning from '@src/assets/img/error_warning.png';
 // @ts-ignore
-import styles from '@src/assets/stylesheets/pitayas/PitayaFail.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaFail.module.scss';
 
 const PitayaFail = ({
   i18nKey = 'PitayaFail_connection_failed_message',

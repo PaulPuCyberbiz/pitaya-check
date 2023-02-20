@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import { v4 as uuid } from 'uuid';
 
-import styles from '@src/assets/stylesheets/pitayas/PitayaCheckbox.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaCheckbox.module.scss';
 
 export interface PitayaCheckboxProps extends React.HTMLProps<HTMLInputElement> {
   inputId?: string;

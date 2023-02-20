@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import styles from '@src/assets/stylesheets/pitayas/PitayaModal.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaModal.module.scss';
 import { CSSTransition } from 'react-transition-group';
 
 export interface PitayaModalProps extends React.HTMLAttributes<HTMLElement> {

@@ -5,7 +5,7 @@ import PitayaFlex, {
   FlexDirection,
   FlexJustify,
 } from '@src/components/pitayas/PitayaFlex';
-import styles from '@src/assets/stylesheets/pitayas/PitayaQueueLoading.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaQueueLoading.module.scss';
 import classNames from 'classnames';
 
 interface PitayaQueueLoadingProps extends React.HTMLAttributes<HTMLElement> {

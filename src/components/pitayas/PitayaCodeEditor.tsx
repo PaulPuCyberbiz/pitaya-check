@@ -1,7 +1,7 @@
 import React from 'react';
 import * as monacoEditor from 'monaco-editor';
 import MonacoEditor, { MonacoEditorProps } from 'react-monaco-editor';
-import styles from '@src/assets/stylesheets/pitayas/PitayaCodeEditor.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaCodeEditor.module.scss';
 import { LanguageName } from '@src/components/pitayas/PitayaCodeEditor/LanguageName';
 import classNames from 'classnames';
 

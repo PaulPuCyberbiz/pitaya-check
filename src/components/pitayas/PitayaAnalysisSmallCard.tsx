@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@src/assets/stylesheets/pitayas/PitayaAnalysisSmallCard.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaAnalysisSmallCard.module.scss';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
 import PitayaIconBtn from '@src/components/pitayas/PitayaIconBtn';

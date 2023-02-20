@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactTags from '@src/components/react_tag_autocomplete/ReactTags.js';
-import styles from '@src/assets/stylesheets/pitayas/PitayaReactTags.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaReactTags.module.scss';
 
 export default class PitayaReactTags extends React.Component {
   constructor(props) {

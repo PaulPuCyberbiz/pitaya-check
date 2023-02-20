@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Editable } from '@src/types/BaseTypes';
 import { PitayaBulletLabel } from '@src/components/pitayas/PitayaBulletLabel';
-import styles from '@src/assets/stylesheets/pitayas/PitayaCKEditorI18n.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaCKEditorI18n.module.scss';
 import i18next from 'i18next';
 import { attribsRemover } from '@src/helpers/htmlAttributeRemover';
 

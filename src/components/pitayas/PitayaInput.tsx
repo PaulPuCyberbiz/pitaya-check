@@ -1,7 +1,7 @@
 import React, { HTMLProps, ReactNode, RefObject } from 'react';
 import classnames from 'classnames';
 import { sizeClassName } from '@src/components/pitayas/PitayaStatus';
-import styles from '@src/assets/stylesheets/pitayas/PitayaInput.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaInput.module.scss';
 import PitayaFlex, {
   FlexAlignItems,
   FlexDirection,

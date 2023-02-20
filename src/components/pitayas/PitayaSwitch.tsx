@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import styles from '@src/assets/stylesheets/pitayas/PitayaSwitch.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaSwitch.module.scss';
 
 interface PitayaSwitchProps {
   id?: string;

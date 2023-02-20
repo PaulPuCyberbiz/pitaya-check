@@ -5,7 +5,7 @@ import { OptionType } from '@src/types/BaseTypes';
 import { Size, sizeClassName } from '@src/components/pitayas/PitayaStatus';
 import { pitayaSelectStyles } from '@src/components/pitayas/pitaya_select/PitayaSelectStyles';
 
-import styles from '@src/assets/stylesheets/pitayas/PitayaSelect.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaSelect.module.scss';
 import PitayaFlex from '@src/components/pitayas/PitayaFlex';
 
 export interface PitayaSelectProps<O> extends CreatableProps<O, boolean> {

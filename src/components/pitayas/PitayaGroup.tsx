@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import styles from '@src/assets/stylesheets/pitayas/PitayaGroup.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaGroup.module.scss';
 
 export interface PitayaGroupProps {
   id?: string;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import flexStyles from '@src/assets/stylesheets/pitayas/PitayaFlex.scss';
-import styles from '@src/assets/stylesheets/pitayas/PitayaTabs.scss';
+import flexStyles from '@src/assets/stylesheets/pitayas/PitayaFlex.module.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaTabs.module.scss';
 import { useHistory } from 'react-router';
 
 export interface LinkObj {

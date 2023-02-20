@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@src/assets/stylesheets/pitayas/PitayaHint.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaHint.module.scss';
 import PitayaRoundBox from './PitayaRoundBox';
 import PitayaGroup from './PitayaGroup';
 

@@ -7,7 +7,7 @@ import {
 import PitayaGroup from '@src/components/pitayas/PitayaGroup';
 import PhotoSortableItem from '@src/components/pitayas/PitayaUploadPhotos/PhotoSortableItem';
 import DropZone from '@src/components/pitayas/PitayaUploadPhotos/DropZone';
-import styles from '@src/assets/stylesheets/pitayas/PitayaUploadPhotos.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaUploadPhotos.module.scss';
 
 interface PitayaUploadPhotosProps {
   photos: Photo[];

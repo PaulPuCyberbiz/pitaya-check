@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
 
 import PitayaButton from '@src/components/pitayas/PitayaButton';
-import styles from '@src/assets/stylesheets/pitayas/PitayaConfirmHeader.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaConfirmHeader.module.scss';
 
 interface ConfirmHeaderProps extends HTMLAttributes<HTMLDivElement> {
   cancelText?: string;

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@src/assets/stylesheets/pitayas/PitayaCheckboxesInput.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaCheckboxesInput.module.scss';
 interface PitayaCheckboxesInputProps extends HTMLElement {
   checkboxes: JSX.Element[];
   input: JSX.Element;

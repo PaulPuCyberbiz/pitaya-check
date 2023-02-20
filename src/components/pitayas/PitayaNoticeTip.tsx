@@ -2,7 +2,7 @@ import React, { HTMLProps, ReactNode } from 'react';
 import classNames from 'classnames';
 
 import { Icon, IconType } from '@src/components/pitayas/pitayaIcons/Icon';
-import styles from '@src/assets/stylesheets/pitayas/PitayaNoticeTip.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaNoticeTip.module.scss';
 
 type TipType = Extract<IconType, 'warning'>;
 

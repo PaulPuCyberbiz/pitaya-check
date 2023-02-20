@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@src/assets/stylesheets/pitayas/PitayaTextarea.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaTextarea.module.scss';
 interface PitayaTextareaProps extends React.HTMLProps<HTMLTextAreaElement> {
   label?: string;
   warningContent?: string;

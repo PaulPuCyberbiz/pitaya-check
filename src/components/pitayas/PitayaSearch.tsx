@@ -2,7 +2,7 @@ import React from 'react';
 import PitayaInput, {
   PitayaInputProps,
 } from '@src/components/pitayas/PitayaInput';
-import styles from '@src/assets/stylesheets/pitayas/PitayaSearch.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaSearch.module.scss';
 import { Icon } from '@src/components/pitayas/pitayaIcons/Icon';
 
 export type PitayaSearchProps = PitayaInputProps;

@@ -3,7 +3,7 @@ import PitayaFlex, {
   FlexDirection,
   FlexJustify,
 } from '@src/components/pitayas/PitayaFlex';
-import styles from '@src/assets/stylesheets/pitayas/PitayaNavigationBar.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaNavigationBar.module.scss';
 import { OptionType } from '@src/types/BaseTypes';
 
 interface NavOptionProps {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { v4 as uuid } from 'uuid';
 
-import styles from '@src/assets/stylesheets/pitayas/PitayaRadios.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaRadios.module.scss';
 
 import PitayaFlex, {
   FlexAlignItems,

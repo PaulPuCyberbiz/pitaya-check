@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import History from 'history';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import styles from '@src/assets/stylesheets/pitayas/PitayaBreadcrumb.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaBreadcrumb.module.scss';
 import { useHistory } from 'react-router';
 import classNames from 'classnames';
 export interface PitayaBreadcrumbItem {

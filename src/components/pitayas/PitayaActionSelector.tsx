@@ -4,7 +4,7 @@ import { OptionType } from '@src/types/BaseTypes';
 
 import PitayaFlex from '@src/components/pitayas/PitayaFlex';
 import PitayaCheckOptions from '@src/components/pitayas/PitayaCheckOptions';
-import styles from '@src/assets/stylesheets/pitayas/PitayaActionSelector.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaActionSelector.module.scss';
 import { CheckStatus } from '@src/components/pitayas/types/CheckStatus';
 
 export interface PitayaActionSelectorProps extends WithTranslation {

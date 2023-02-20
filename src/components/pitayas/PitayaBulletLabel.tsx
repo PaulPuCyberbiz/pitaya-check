@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import styles from '@src/assets/stylesheets/pitayas/PitayaBulletLabel.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaBulletLabel.module.scss';
 
 export type PitayaBulletLabel = {
   actived?: boolean;

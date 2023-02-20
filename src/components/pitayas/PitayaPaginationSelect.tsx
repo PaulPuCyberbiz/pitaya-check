@@ -6,10 +6,10 @@ import {
   LoadOptions as WrappedOptions,
 } from 'react-select-async-paginate';
 
-import styles from '@src/assets/stylesheets/pitayas/PitayaPaginationSelect.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaPaginationSelect.module.scss';
 
 import { OptionType, OptionalPartial } from '@src/types/BaseTypes';
-import pitayaSelectStyles from '@src/assets/stylesheets/pitayas/PitayaSelect.scss';
+import pitayaSelectStyles from '@src/assets/stylesheets/pitayas/PitayaSelect.module.scss';
 import { pitayaSelectStyles as stylesProps } from '@src/components/pitayas/pitaya_select/PitayaSelectStyles';
 import { Size, sizeClassName } from '@src/components/pitayas/PitayaStatus';
 

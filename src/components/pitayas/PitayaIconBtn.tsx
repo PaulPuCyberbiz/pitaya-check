@@ -6,7 +6,7 @@ import { Icon, IconType } from '@src/components/pitayas/pitayaIcons/Icon';
 import PitayaTooltip, {
   PitayaTooltipProps,
 } from '@src/components/pitayas/PitayaTooltip';
-import styles from '@src/assets/stylesheets/pitayas/PitayaIconBtn.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaIconBtn.module.scss';
 
 type ButtonType = ButtonHTMLAttributes<HTMLButtonElement>['type'];
 

@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 import Slider, { Settings } from 'react-slick';
 
-import styles from '@src/assets/stylesheets/pitayas/PitayaSlider.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaSlider.module.scss';
 
 export type PitayaSliderProps = PropsWithChildren<Settings> & {
   ref?: React.RefObject<Slider>;

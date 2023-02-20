@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import PitayaSelect from '@src/components/pitayas/PitayaSelect';
 import PitayaCheckbox from '@src/components/pitayas/PitayaCheckbox';
 import { OptionType } from '@src/types/BaseTypes';
-import styles from '@src/assets/stylesheets/pitayas/PitayaCheckOptions.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaCheckOptions.module.scss';
 
 export interface PitayaCheckOptionsProps
   extends Omit<React.HTMLAttributes<HTMLElement>, 'onSelect'> {

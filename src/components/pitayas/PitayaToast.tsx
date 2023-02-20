@@ -4,7 +4,7 @@ import { ToastContainer, toast, ToastOptions } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
 import { ToastType, ToastMessage } from '@src/data/ToastMessage';
-import styles from '@src/assets/stylesheets/pitayas/PitayaToast.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaToast.module.scss';
 import ApiError from '@src/services/api/errors/ApiError';
 import DupSkuErrorMessage from '@src/features/collection/components/DupSkuErrorMessage';
 

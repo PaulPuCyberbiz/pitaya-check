@@ -5,7 +5,7 @@ import PitayaRadios from '@src/components/pitayas/PitayaRadios';
 import PitayaDateTimePicker, {
   PitayaDateTimePickerProps,
 } from '@src/components/pitayas/PitayaDateTimePicker';
-import styles from '@src/assets/stylesheets/pitayas/PitayaDateTimePicker.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaDateTimePicker.module.scss';
 import { useTranslation } from 'react-i18next';
 export interface PitayaDisableableDatePickerProps
   extends PitayaDateTimePickerProps {

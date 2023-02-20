@@ -2,7 +2,7 @@ import React, { ReactNode, HTMLProps } from 'react';
 import classNames from 'classnames';
 import PitayaFlex, { FlexJustify } from '@src/components/pitayas/PitayaFlex';
 import PitayaIconBtn from '@src/components/pitayas/PitayaIconBtn';
-import styles from '@src/assets/stylesheets/pitayas/PitayaNumberCard.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaNumberCard.module.scss';
 
 interface PitayaNumberCardProps extends HTMLProps<HTMLDivElement> {
   numberOfCard: ReactNode;

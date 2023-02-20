@@ -1,5 +1,5 @@
 import React, { HtmlHTMLAttributes } from 'react';
-import styles from '@src/assets/stylesheets/pitayas/PitayaTable.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaTable.module.scss';
 
 export interface PitayaTableItem {
   className: string;

@@ -6,7 +6,7 @@ import PitayaDoughnutPlot from '@src/components/pitayas/pitayaChart/PitayaDoughn
 import PitayaAnalysisSmallCard, {
   AnalysisSmallCardProps,
 } from '@src/components/pitayas/PitayaAnalysisSmallCard';
-import styles from '@src/assets/stylesheets/pitayas/PitayaAnalysisCard.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaAnalysisCard.module.scss';
 
 export interface PitayaAnalysisCardProps extends HTMLProps<HTMLDivElement> {
   title: string;

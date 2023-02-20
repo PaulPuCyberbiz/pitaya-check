@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@src/assets/stylesheets/pitayas/PitayaRoundBox.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaRoundBox.module.scss';
 
 export type PitayaRoundBoxProps = React.HTMLAttributes<HTMLDivElement> & {
   roundBoxRef?: React.RefObject<HTMLDivElement>;

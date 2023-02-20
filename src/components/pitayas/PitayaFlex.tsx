@@ -1,5 +1,5 @@
 import React, { HTMLProps, Ref } from 'react';
-import styles from '@src/assets/stylesheets/pitayas/PitayaFlex.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaFlex.module.scss';
 
 export enum FlexDirection {
   ROW = 'flex-row',

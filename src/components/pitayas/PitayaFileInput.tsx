@@ -1,6 +1,6 @@
 import React, { ChangeEvent } from 'react';
 import { Size, sizeClassName } from '@src/components/pitayas/PitayaStatus';
-import styles from '@src/assets/stylesheets/pitayas/PitayaFileInput.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaFileInput.module.scss';
 
 const getImageData = (
   newFile: File,

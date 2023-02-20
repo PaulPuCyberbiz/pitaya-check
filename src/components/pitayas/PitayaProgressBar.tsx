@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactTooltip from 'react-tooltip';
 
-import styles from '@src/assets/stylesheets/pitayas/PitayaProgressBar.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaProgressBar.module.scss';
 
 export interface PitayaProgressBarProps extends React.HTMLProps<HTMLElement> {
   ratio: number;

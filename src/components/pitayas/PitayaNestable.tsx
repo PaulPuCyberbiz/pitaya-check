@@ -11,7 +11,7 @@ import SortableTree, {
 } from 'react-sortable-tree';
 import defaultMinimal from 'react-sortable-tree-theme-minimal';
 import NodeContent from '@src/components/pitayas/pitayaNestable/node-content-renderer';
-import styles from '@src/assets/stylesheets/pitayas/PitayaNestable.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaNestable.module.scss';
 // This only needs to be imported once in your app
 
 export interface OnMoveData

@@ -17,7 +17,7 @@ import {
 import _ from 'lodash';
 import classNames from 'classnames';
 
-import styles from '@src/assets/stylesheets/pitayas/PitayaSortableList.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaSortableList.module.scss';
 import MoveIcon from '@src/components/pitayas/pitayaSortableList/MoveIcon';
 import { positiveIntegerPattern, LocalStorage } from '@src/helpers';
 import { PitayaShowColsCollapse } from '@src/components/pitayas/PitayaShowColsCollapse';

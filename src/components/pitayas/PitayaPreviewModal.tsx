@@ -9,7 +9,7 @@ import React, {
   Fragment,
 } from 'react';
 
-import styles from '@src/assets/stylesheets/pitayas/PitayaPreviewModal.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaPreviewModal.module.scss';
 
 import PitayaButton from '@src/components/pitayas/PitayaButton';
 import { Icon } from '@src/components/pitayas/pitayaIcons/Icon';

@@ -9,7 +9,7 @@ import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 /* tslint:enable */
 
-import styles from '@src/assets/stylesheets/pitayas/PitayaDateRangePicker.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaDateRangePicker.module.scss';
 import { useTranslation } from 'react-i18next';
 
 type MomentObj = Moment | null;

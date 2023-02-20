@@ -4,7 +4,7 @@ import moment, { Moment } from 'moment';
 import _ from 'lodash';
 // tslint:disable-next-line:no-submodule-imports
 import 'react-datepicker/dist/react-datepicker.css';
-import styles from '@src/assets/stylesheets/pitayas/PitayaDateTimePicker.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaDateTimePicker.module.scss';
 import { Size, sizeClassName } from '@src/components/pitayas/PitayaStatus';
 
 import { withTranslation, WithTranslation } from 'react-i18next';

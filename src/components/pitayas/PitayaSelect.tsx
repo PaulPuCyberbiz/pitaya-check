@@ -7,7 +7,7 @@ import Select, {
 } from 'react-select';
 import { OptionType, GroupOptionType } from '@src/types/BaseTypes';
 import { Size, sizeClassName } from '@src/components/pitayas/PitayaStatus';
-import styles from '@src/assets/stylesheets/pitayas/PitayaSelect.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaSelect.module.scss';
 import { pitayaSelectStyles } from '@src/components/pitayas/pitaya_select/PitayaSelectStyles';
 
 export interface PitayaSelectProps<O> {

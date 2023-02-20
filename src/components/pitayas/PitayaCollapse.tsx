@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import classNames from 'classnames';
 
-import styles from '@src/assets/stylesheets/pitayas/PitayaCollapse.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaCollapse.module.scss';
 
 export type PitayaCollapseProps = React.HTMLProps<HTMLDivElement> & {
   isOpen: boolean;

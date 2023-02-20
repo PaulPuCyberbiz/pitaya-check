@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@src/assets/stylesheets/pitayas/PitayaTree.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaTree.module.scss';
 import PitayaTreeNode from '@src/components/pitayas/PitayaTreeNode';
 import { CheckStatus } from '@src/components/pitayas/types/CheckStatus';
 

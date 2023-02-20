@@ -1,7 +1,7 @@
 import React from 'react';
 import { Icon, IconType } from '@src/components/pitayas/pitayaIcons/Icon';
 
-import styles from '@src/assets/stylesheets/pitayas/PitayaIconLabel.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaIconLabel.module.scss';
 
 type ProductEditIconBtnProps = React.HTMLProps<HTMLDivElement> & {
   type: Extract<

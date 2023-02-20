@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import PitayaGroup from '@src/components/pitayas/PitayaGroup';
 import PhotoSortableItem from '@src/components/pitayas/PitayaImageHosting/PhotoSortableItem';
-import styles from '@src/assets/stylesheets/pitayas/PitayaImageHosting.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaImageHosting.module.scss';
 import DropZone, {
   DropZoneProps,
 } from '@src/components/pitayas/PitayaImageHosting/DropZone';

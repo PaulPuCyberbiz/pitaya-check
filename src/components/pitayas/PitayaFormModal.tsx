@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import PitayaModal from '@src/components/pitayas/PitayaModal';
-import styles from '@src/assets/stylesheets/pitayas/PitayaFormModal.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaFormModal.module.scss';
 
 export enum EventHandlersEventMap {
   KEYPRESS = 'keypress',

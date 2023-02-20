@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PitayaRoundBox from '@src/components/pitayas/PitayaRoundBox';
 import PitayaGroup from '@src/components/pitayas/PitayaGroup';
 import PitayaCollapse from '@src/components/pitayas/PitayaCollapse';
-import styles from '@src/assets/stylesheets/pitayas/PitayaExpansionPanel.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaExpansionPanel.module.scss';
 
 export type PitayaExpansionPanelProps = Omit<
   React.HTMLProps<HTMLDivElement>,

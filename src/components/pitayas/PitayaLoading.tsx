@@ -6,7 +6,7 @@ import PitayaFlex, {
   FlexDirection,
   FlexJustify,
 } from '@src/components/pitayas/PitayaFlex';
-import styles from '@src/assets/stylesheets/pitayas/PitayaLoading.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaLoading.module.scss';
 interface LoadingDialogProps {
   className?: string;
   show: boolean;

@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect, FormEvent } from 'react';
 import PitayaInput, {
   PitayaInputProps,
 } from '@src/components/pitayas/PitayaInput';
-import styles from '@src/assets/stylesheets/pitayas/PitayaEditable.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaEditable.module.scss';
 import { isBlank } from '@src/helpers';
 
 interface PitayaEditableProps extends PitayaInputProps {

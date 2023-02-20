@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classnames from 'classnames';
-import styles from '@src/assets/stylesheets/pitayas/PitayaModalInput.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaModalInput.module.scss';
 import PitayaInput, {
   PitayaInputProps,
 } from '@src/components/pitayas/PitayaInput';

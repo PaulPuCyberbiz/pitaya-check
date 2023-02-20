@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@src/assets/stylesheets/pitayas/PitayaActiveStatus.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaActiveStatus.module.scss';
 import { useTranslation } from 'react-i18next';
 interface PitayaActiveStatusProps {
   isActivated: boolean;

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@src/assets/stylesheets/pitayas/PitayaGroupTitle.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaGroupTitle.module.scss';
 
 type PitayaGroupTitleProps = HTMLElement;
 

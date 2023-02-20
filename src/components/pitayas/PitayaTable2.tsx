@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import styles from '@src/assets/stylesheets/pitayas/PitayaTable2.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaTable2.module.scss';
 import { OptionType } from '@src/types/BaseTypes';
 import PitayaSelect from '@src/components/pitayas/PitayaSelect';
 import { deprecationWarning } from '@src/helpers';

@@ -1,5 +1,5 @@
 import React, { HTMLProps } from 'react';
-import styles from '@src/assets/stylesheets/pitayas/PitayaRadioInput.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaRadioInput.module.scss';
 
 export type PitayaRadioInputProps = Omit<HTMLProps<HTMLInputElement>, 'type'>;
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@src/assets/stylesheets/pitayas/PitayaPagination.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaPagination.module.scss';
 import PitayaFlex, {
   FlexAlignItems,
   FlexJustify,

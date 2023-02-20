@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import styles from '@src/assets/stylesheets/pitayas/PitayaButton.scss';
+import styles from '@src/assets/stylesheets/pitayas/PitayaButton.module.scss';
 import {
   Size,
   sizeClassName,
